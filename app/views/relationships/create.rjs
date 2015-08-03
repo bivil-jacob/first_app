@@ -1,0 +1,3 @@
+page.alert('Create!')
+page.replace_html :relationship_submit, :partial => 'users/unfollow' 
+page.replace_html :followers, "#{@user.followers.count} followers'
