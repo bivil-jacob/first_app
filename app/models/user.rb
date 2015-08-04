@@ -80,6 +80,7 @@ end
 
 
 
+
 # == Schema Information
 #
 # Table name: users
@@ -92,5 +93,6 @@ end
 #  encrypted_password :string(255)
 #  salt               :string(255)
 #  remember_token     :string(255)
+#  admin              :boolean(1)      default(FALSE)
 #
 

@@ -18,3 +18,15 @@ class Micropost < ActiveRecord::Base
 			{ :conditions => ["user_id IN (#{followed_ids} OR user_id = :user_id)",{ :user_id => user }]}
 		end
 end
+
+# == Schema Information
+#
+# Table name: microposts
+#
+#  id         :integer(4)      not null, primary key
+#  content    :string(255)
+#  user_id    :integer(4)
+#  created_at :datetime
+#  updated_at :datetime
+#
+

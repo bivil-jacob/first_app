@@ -1,4 +1,6 @@
+
 require 'spec_helper'
+
 
 describe PagesController do
 
@@ -21,4 +23,5 @@ describe PagesController do
       response.should be_success
     end
   end
+
 end

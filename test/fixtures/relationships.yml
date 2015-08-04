@@ -7,3 +7,15 @@ one:
 two:
   follower_id: 1
   followed_id: 1
+
+# == Schema Information
+#
+# Table name: relationships
+#
+#  id          :integer(4)      not null, primary key
+#  follower_id :integer(4)
+#  followed_id :integer(4)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
