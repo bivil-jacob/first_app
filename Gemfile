@@ -12,3 +12,5 @@ gem 'will_paginate',   '2.3.12'
 gem 'rspec-rails',  '1.3.2'
 
 gem 'test-unit', '1.2.3'
+
+gem 'webrat'

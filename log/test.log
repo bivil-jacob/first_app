@@ -1373,3 +1373,928 @@ Rendered layouts/_header (0.2ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
   [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.9ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 12:53:01) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (24.1ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 60, DB: 16) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 12:53:01) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 12:53:01) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 12:53:01) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 12:53:38) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 22ms (View: 20, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 12:53:38) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 12:53:38) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 12:53:38) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 12:58:04) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (24.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 77ms (View: 61, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 12:58:04) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 12:58:04) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 12:58:04) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 12:58:42) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 33ms (View: 16, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 12:58:42) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 12:58:42) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 12:58:42) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 12:59:57) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 33ms (View: 16, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 12:59:57) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 12:59:57) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 12:59:57) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (12.9ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 44ms (View: 42, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /home with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:02:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 22ms (View: 21, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /home with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:03:30) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:05:15) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 22ms (View: 20, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /home with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:05:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (35.2ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 145ms (View: 143, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:06:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:08:02) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:08:02) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:08:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (13.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 44ms (View: 42, DB: 1) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-05 13:51:23) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+  [4;35;1mUser Columns (38.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 48ms (View: 7, DB: 38) | 200 OK [http://www.example.com/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
