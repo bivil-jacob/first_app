@@ -1,11 +1,10 @@
 require 'spec_helper'
 
 describe UsersController do
+  integrate_views
 
   #Delete these examples and add some real ones
-  it "should use UsersController" do
-    controller.should be_an_instance_of(UsersController)
-  end
+  
 
 
   describe "GET 'new'" do
@@ -13,5 +12,15 @@ describe UsersController do
       get 'new'
       response.should be_success
     end
+    it "should have the right title" do
+      get 'new'
+      response.should have_tag("title", /Sign up/)
+    end
+
+    it "should have a signup page at '/signup'" do
+      get 'new'
+      response.should render_template('users/new')
+    end
   end
+
 end
