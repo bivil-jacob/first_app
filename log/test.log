@@ -13139,3 +13139,1865 @@ Rendered layouts/_header (0.2ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
   [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (46.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:30', '2015-08-06 09:52:30', '3a428126528784a5bbf874d750c0e7c1363b57684c8a529030bcd3bb899499d7', 'eaad12fedf30564b72376b2b36c99b2e62081253244a4362775435fb8d18c979', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:30) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = 'b51a0d64e96c4063a5af0041e58b10f4334a9f569b6dbfc6b950dcf050ff6f03', `updated_at` = '2015-08-06 09:52:30' WHERE `id` = 101[0m
+Redirected to http://test.host/users/101
+Completed in 28ms (DB: 48) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (15.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:30', '2015-08-06 09:52:30', '3a428126528784a5bbf874d750c0e7c1363b57684c8a529030bcd3bb899499d7', 'eaad12fedf30564b72376b2b36c99b2e62081253244a4362775435fb8d18c979', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:30) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = '2220f9d4fa75f0ef430c8e9c78c783889a70f475f13721edb450b0764789834c', `updated_at` = '2015-08-06 09:52:30' WHERE `id` = 102[0m
+Redirected to http://test.host/users/102
+Completed in 3ms (DB: 17) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (22.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:30', '2015-08-06 09:52:30', '3a428126528784a5bbf874d750c0e7c1363b57684c8a529030bcd3bb899499d7', 'eaad12fedf30564b72376b2b36c99b2e62081253244a4362775435fb8d18c979', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:30) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '65be22b8ac69fc54951a3f4208786481029255323a76f1750ee682d399b16065', `updated_at` = '2015-08-06 09:52:30' WHERE `id` = 103[0m
+Redirected to http://test.host/users/103
+Completed in 4ms (DB: 24) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:30) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 61, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:30) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:52:30', '2015-08-06 09:52:30', '3a428126528784a5bbf874d750c0e7c1363b57684c8a529030bcd3bb899499d7', 'eaad12fedf30564b72376b2b36c99b2e62081253244a4362775435fb8d18c979', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 104, name: "Example User", email: "example007@railstutorial.org", created_at: "2015-08-06 09:52:30", updated_at: "2015-08-06 09:52:30", encrypted_password: "3a428126528784a5bbf874d750c0e7c1363b57684c8a529030b...", salt: "eaad12fedf30564b72376b2b36c99b2e62081253244a4362775...", remember_token: nil, admin: false>, "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 104) [0m
+  [4;36;1mMicropost Load (0.4ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 104) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mMicropost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 104) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 104) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 104)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 104)) [0m
+Rendered pages/_stats (3.2ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 7, DB: 5) | 200 OK [http://test.host/users/104]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:46', '2015-08-06 09:52:46', '48b5334f37371935c88295e8b6efba9e12be766e52045a2065d541b1e88cb9b5', 'a90c4e023450292c4d758a499e383353eb43586dc4b9aabdaa97b11066714d61', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:46) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = 'dae2c3a8c0c7b6999ddfde4347a3681671c9e76545bec4fe7fc79a62c2684aad', `updated_at` = '2015-08-06 09:52:46' WHERE `id` = 105[0m
+Redirected to http://test.host/users/105
+Completed in 28ms (DB: 4) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (15.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:46', '2015-08-06 09:52:46', '48b5334f37371935c88295e8b6efba9e12be766e52045a2065d541b1e88cb9b5', 'a90c4e023450292c4d758a499e383353eb43586dc4b9aabdaa97b11066714d61', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:46) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.4ms)[0m   [0mUPDATE `users` SET `remember_token` = 'd8d424fadd13352fa348a52efcbe9b616985e74a381a09e226fd5b7aa5558004', `updated_at` = '2015-08-06 09:52:46' WHERE `id` = 106[0m
+Redirected to http://test.host/users/106
+Completed in 4ms (DB: 17) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:52:46', '2015-08-06 09:52:46', '48b5334f37371935c88295e8b6efba9e12be766e52045a2065d541b1e88cb9b5', 'a90c4e023450292c4d758a499e383353eb43586dc4b9aabdaa97b11066714d61', NULL, 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:46) [POST]
+  Parameters: {"user"=>nil, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '224bf1db96ed64d5c9346b1bcecb1b37c52f55c623d3de682719857cd825a39b', `updated_at` = '2015-08-06 09:52:46' WHERE `id` = 107[0m
+Redirected to http://test.host/users/107
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/users]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:46) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 45ms (View: 44, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:22:46) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.2ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:52:46', '2015-08-06 09:52:46', '48b5334f37371935c88295e8b6efba9e12be766e52045a2065d541b1e88cb9b5', 'a90c4e023450292c4d758a499e383353eb43586dc4b9aabdaa97b11066714d61', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2015-08-06 15:22:46) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 108, name: "Example User", email: "example007@railstutorial.org", created_at: "2015-08-06 09:52:46", updated_at: "2015-08-06 09:52:46", encrypted_password: "48b5334f37371935c88295e8b6efba9e12be766e52045a2065d...", salt: "a90c4e023450292c4d758a499e383353eb43586dc4b9aabdaa9...", remember_token: nil, admin: false>, "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 108) [0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 108) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mMicropost Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 108) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 108) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 108)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 108)) [0m
+Rendered pages/_stats (2.9ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 6, DB: 5) | 200 OK [http://test.host/users/108]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:46) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:22:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (44.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:02', '2015-08-06 09:54:02', 'c633a5a062513ffc9a68fbbd68c64cfb36d62f7aed7dc80d1b41f58e674b7f3c', 'a97409ab88baeca286f7e09341594f15fb2d996252cc304835f0046d55893843', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:02) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '8dfadc658bbee81c22eaea5198774e53d909ac6d1786da99e1266d5a0ef12073', `updated_at` = '2015-08-06 09:54:02' WHERE `id` = 109[0m
+Redirected to http://test.host/users/109
+Completed in 28ms (DB: 46) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (37.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:03', '2015-08-06 09:54:03', 'e2b4e57122e93c7219e6bd9cc5cf33b91a956ce96ba5c8e5bb42d1e25932a3b4', 'd002cea49f6146c4b0b81005f0afe2f91d89c3e8328cd9f34a1c9c5b974ce897', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:03) [POST]
+  Parameters: {"user"=>nil, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = '3d26a490444a37facd5f07192ed91cbc42fb34e98ed61638eb33c2ad56cf0395', `updated_at` = '2015-08-06 09:54:03' WHERE `id` = 110[0m
+Redirected to http://test.host/users/110
+Completed in 3ms (DB: 38) | 302 Found [http://test.host/users]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:03', '2015-08-06 09:54:03', 'e2b4e57122e93c7219e6bd9cc5cf33b91a956ce96ba5c8e5bb42d1e25932a3b4', 'd002cea49f6146c4b0b81005f0afe2f91d89c3e8328cd9f34a1c9c5b974ce897', NULL, 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:03) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (32.9ms)[0m   [0;1mUPDATE `users` SET `remember_token` = 'cb2c2e43eedfa810735b6919f521e02dc694d2fe0c8f3453d677c37924a1c9c8', `updated_at` = '2015-08-06 09:54:03' WHERE `id` = 111[0m
+Redirected to http://test.host/users/111
+Completed in 37ms (DB: 35) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:03) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 44ms (View: 44, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:03) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:54:03', '2015-08-06 09:54:03', 'e2b4e57122e93c7219e6bd9cc5cf33b91a956ce96ba5c8e5bb42d1e25932a3b4', 'd002cea49f6146c4b0b81005f0afe2f91d89c3e8328cd9f34a1c9c5b974ce897', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 112, name: "Example User", email: "example007@railstutorial.org", created_at: "2015-08-06 09:54:03", updated_at: "2015-08-06 09:54:03", encrypted_password: "e2b4e57122e93c7219e6bd9cc5cf33b91a956ce96ba5c8e5bb4...", salt: "d002cea49f6146c4b0b81005f0afe2f91d89c3e8328cd9f34a1...", remember_token: nil, admin: false>, "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 112) [0m
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 112) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mMicropost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 112) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 112) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 112)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 112)) [0m
+Rendered pages/_stats (3.0ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 7, DB: 4) | 200 OK [http://test.host/users/112]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:23', '2015-08-06 09:54:23', 'c9add82b08822a40f7f5ca3f669b3c7f9d0cd308fe4ce2149724ef5ce265cad7', '508af3e555e372db6154cc2e4256261a52e88f01769ca00f8a22f3e0e8434419', NULL, 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:23) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = 'f32b7b2c03feea7b4a404958260c3a03f5b376abad396759f9dc108bd0a9fbc4', `updated_at` = '2015-08-06 09:54:23' WHERE `id` = 113[0m
+Redirected to http://test.host/users/113
+Completed in 6ms (DB: 3) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (11.4ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:23', '2015-08-06 09:54:23', 'c9add82b08822a40f7f5ca3f669b3c7f9d0cd308fe4ce2149724ef5ce265cad7', '508af3e555e372db6154cc2e4256261a52e88f01769ca00f8a22f3e0e8434419', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:23) [POST]
+  Parameters: {"user"=>nil, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = 'a599e6869dd3596ded5f81b0cfe50fbd7733f9bf36aeab61ae37e220063b6db6', `updated_at` = '2015-08-06 09:54:23' WHERE `id` = 114[0m
+Redirected to http://test.host/users/114
+Completed in 3ms (DB: 13) | 302 Found [http://test.host/users]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:23', '2015-08-06 09:54:23', 'c9add82b08822a40f7f5ca3f669b3c7f9d0cd308fe4ce2149724ef5ce265cad7', '508af3e555e372db6154cc2e4256261a52e88f01769ca00f8a22f3e0e8434419', NULL, 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:23) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '653fb3076e74edec35c4907a89993366a6522cfd84822a7fdbfd0afffe236250', `updated_at` = '2015-08-06 09:54:23' WHERE `id` = 115[0m
+Redirected to http://test.host/users/115
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (0.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:23) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 26ms (View: 26, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:23) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:54:23', '2015-08-06 09:54:23', 'c9add82b08822a40f7f5ca3f669b3c7f9d0cd308fe4ce2149724ef5ce265cad7', '508af3e555e372db6154cc2e4256261a52e88f01769ca00f8a22f3e0e8434419', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 116, name: "Example User", email: "example007@railstutorial.org", created_at: "2015-08-06 09:54:23", updated_at: "2015-08-06 09:54:23", encrypted_password: "c9add82b08822a40f7f5ca3f669b3c7f9d0cd308fe4ce214972...", salt: "508af3e555e372db6154cc2e4256261a52e88f01769ca00f8a2...", remember_token: nil, admin: false>, "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 116) [0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 116) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mMicropost Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 116) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 116) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 116)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 116)) [0m
+Rendered pages/_stats (2.6ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 11ms (View: 6, DB: 4) | 200 OK [http://test.host/users/116]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:33', '2015-08-06 09:54:33', 'a71838cf75af4329c5bbec39745c5f4763d2934fe1d0233a97be3fd13279b5f9', 'de5a45c06709b915c3cabcbc05e42a75b8ca3205e58ba67a27d5bbc89dbd9b1d', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:33) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = 'ef1c03aa156bf97da1b26ebcb0228b7c69b13a8aba0fe0a08f782c2f0949c4e5', `updated_at` = '2015-08-06 09:54:33' WHERE `id` = 117[0m
+Redirected to http://test.host/users/117
+Completed in 6ms (DB: 4) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (21.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:33', '2015-08-06 09:54:33', 'a71838cf75af4329c5bbec39745c5f4763d2934fe1d0233a97be3fd13279b5f9', 'de5a45c06709b915c3cabcbc05e42a75b8ca3205e58ba67a27d5bbc89dbd9b1d', NULL, 0)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:33) [POST]
+  Parameters: {"user"=>nil, "action"=>"create", "controller"=>"users"}
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = '55177a62897936f9494bbf67175e36adbfa87828a0a58e0a41e9750e7fa125ff', `updated_at` = '2015-08-06 09:54:33' WHERE `id` = 118[0m
+Redirected to http://test.host/users/118
+Completed in 3ms (DB: 23) | 302 Found [http://test.host/users]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('New User', 'user@example.com', '2015-08-06 09:54:33', '2015-08-06 09:54:33', 'a71838cf75af4329c5bbec39745c5f4763d2934fe1d0233a97be3fd13279b5f9', 'de5a45c06709b915c3cabcbc05e42a75b8ca3205e58ba67a27d5bbc89dbd9b1d', NULL, 0)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:33) [POST]
+  Parameters: {"user"=>{"name"=>"New User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '7837bf3b3831b83070a6e63e0a05cd23e52b2a4016202e6b3477eaf6a9dfbec7', `updated_at` = '2015-08-06 09:54:33' WHERE `id` = 119[0m
+Redirected to http://test.host/users/119
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/users?user%5Bemail%5D=user%40example.com&user%5Bname%5D=New+User&user%5Bpassword%5D=foobar&user%5Bpassword_confirmation%5D=foobar]
+  [4;35;1mSQL (0.9ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:33) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 25ms (View: 25, DB: 1) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2015-08-06 15:24:33) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "action"=>"create", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Bname%5D=&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:54:33', '2015-08-06 09:54:33', 'a71838cf75af4329c5bbec39745c5f4763d2934fe1d0233a97be3fd13279b5f9', 'de5a45c06709b915c3cabcbc05e42a75b8ca3205e58ba67a27d5bbc89dbd9b1d', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"show", "id"=>#<User id: 120, name: "Example User", email: "example007@railstutorial.org", created_at: "2015-08-06 09:54:33", updated_at: "2015-08-06 09:54:33", encrypted_password: "a71838cf75af4329c5bbec39745c5f4763d2934fe1d0233a97b...", salt: "de5a45c06709b915c3cabcbc05e42a75b8ca3205e58ba67a27d...", remember_token: nil, admin: false>, "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 120) [0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 120) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mMicropost Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 120) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 120) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 120)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 120)) [0m
+Rendered pages/_stats (2.7ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 11ms (View: 6, DB: 5) | 200 OK [http://test.host/users/120]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2015-08-06 15:24:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 85ms (View: 84, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 29ms (View: 28, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:26:03) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+  [4;35;1mUser Columns (80.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 89ms (View: 6, DB: 80) | 200 OK [http://www.example.com/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 19ms (View: 18, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.2ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:27:21) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+  [4;35;1mUser Columns (48.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 57ms (View: 7, DB: 48) | 200 OK [http://www.example.com/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (44.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:59:32', '2015-08-06 09:59:32', '1f3669b58ecdab674785dbec0819c22a9c96d7294d25905bef88304acde6cec7', '517f32d5a29e5367cdfc397d37a0e4ac1f1ddb54f9b11f7872d92a7f3dc46f61', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:29:32) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 19ms (View: 18, DB: 47) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:29:32) [POST]
+  Parameters: {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = '7e57d1dd99ff5d947a5a06132457cfe4f8b7c9c69ca07853a284bbd7da07d760', `updated_at` = '2015-08-06 09:59:32' WHERE `id` = 121[0m
+Redirected to http://www.example.com/users/121
+Completed in 244ms (DB: 1) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/121 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:29:32) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"121"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 121) [0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 121) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '7e57d1dd99ff5d947a5a06132457cfe4f8b7c9c69ca07853a284bbd7da07d760') LIMIT 1[0m
+Rendered users/_follow_form (0.4ms)
+  [4;35;1mMicropost Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 121) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 121) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 121)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 121)) [0m
+Rendered pages/_stats (3.1ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 33ms (View: 27, DB: 4) | 200 OK [http://www.example.com/users/121]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/121"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '7e57d1dd99ff5d947a5a06132457cfe4f8b7c9c69ca07853a284bbd7da07d760') LIMIT 1[0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (user_id IN (SELECT followed_id FROM relationships 	WHERE follower_id = 121 OR user_id = 121)) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_micropost_form (1.4ms)
+Rendered pages/_feed (0.3ms)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 121) [0m
+Rendered pages/_user_info (1.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 121)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 121)) [0m
+Rendered pages/_stats (1.6ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 7, DB: 2) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (37.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 09:59:33', '2015-08-06 09:59:33', 'a83037c8cc5f42e5af6f9e362b3c8ba99ee5b5c6d9448ec1153159e958072937', '5384cbac4ac32c0f141a782e959e7722ab9c4035c95236914d4ece13940cf919', NULL, 0)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 38) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:29:33) [POST]
+  Parameters: {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'example007@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '2a984cf25b515feaf847801cdcd0f90912a9f526f2e161a73c3a76a9a3ba6732', `updated_at` = '2015-08-06 09:59:33' WHERE `id` = 122[0m
+Redirected to http://www.example.com/users/122
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/122 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"122"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 122) [0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 122) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '2a984cf25b515feaf847801cdcd0f90912a9f526f2e161a73c3a76a9a3ba6732') LIMIT 1[0m
+Rendered users/_follow_form (0.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 122) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 122) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 122)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 122)) [0m
+Rendered pages/_stats (2.2ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 29ms (View: 26, DB: 2) | 200 OK [http://www.example.com/users/122]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 14, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:29:33) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://www.example.com/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (44.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 10:01:26', '2015-08-06 10:01:26', '181ba6dcc16a396cd135573523b10f25c17e2bcbc75b0f8f8baa0c2c0030afcd', '0ec858e2f440339660261d98c17f04b78f2e1741e3ce238f0ccbf4db483f8aa2', NULL, 0)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 28ms (View: 26, DB: 46) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:31:26) [POST]
+  Parameters: {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = 'c8856445aa54c76f7eeedc945022bdb40c2b80bc4fd1949c65a9f10a8e887301', `updated_at` = '2015-08-06 10:01:26' WHERE `id` = 123[0m
+Redirected to http://www.example.com/users/123
+Completed in 27ms (DB: 1) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/123 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"123"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 123) [0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 123) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'c8856445aa54c76f7eeedc945022bdb40c2b80bc4fd1949c65a9f10a8e887301') LIMIT 1[0m
+Rendered users/_follow_form (0.4ms)
+  [4;35;1mMicropost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 123) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 123) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 123)) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 123)) [0m
+Rendered pages/_stats (3.1ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 62ms (View: 56, DB: 3) | 200 OK [http://www.example.com/users/123]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/123"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'c8856445aa54c76f7eeedc945022bdb40c2b80bc4fd1949c65a9f10a8e887301') LIMIT 1[0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (user_id IN (SELECT followed_id FROM relationships 	WHERE follower_id = 123 OR user_id = 123)) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_micropost_form (1.4ms)
+Rendered pages/_feed (0.3ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 123) [0m
+Rendered pages/_user_info (1.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 123)) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 123)) [0m
+Rendered pages/_stats (1.4ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 11ms (View: 7, DB: 2) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (51.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 10:01:26', '2015-08-06 10:01:26', '181ba6dcc16a396cd135573523b10f25c17e2bcbc75b0f8f8baa0c2c0030afcd', '0ec858e2f440339660261d98c17f04b78f2e1741e3ce238f0ccbf4db483f8aa2', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 52) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:31:26) [POST]
+  Parameters: {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'example007@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '2885fae1b1d9b404e0f5ea19e97f937361ec4d15cff1725a4cb0d670fb0b4ece', `updated_at` = '2015-08-06 10:01:26' WHERE `id` = 124[0m
+Redirected to http://www.example.com/users/124
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/124 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"124"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 124) [0m
+  [4;36;1mMicropost Load (0.3ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 124) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '2885fae1b1d9b404e0f5ea19e97f937361ec4d15cff1725a4cb0d670fb0b4ece') LIMIT 1[0m
+Rendered users/_follow_form (0.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 124) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 124) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 124)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 124)) [0m
+Rendered pages/_stats (1.4ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 28ms (View: 26, DB: 2) | 200 OK [http://www.example.com/users/124]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/124"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '2885fae1b1d9b404e0f5ea19e97f937361ec4d15cff1725a4cb0d670fb0b4ece') LIMIT 1[0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (user_id IN (SELECT followed_id FROM relationships 	WHERE follower_id = 124 OR user_id = 124)) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering pages/home
+Rendered pages/_micropost_form (0.4ms)
+Rendered pages/_feed (0.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 124) [0m
+Rendered pages/_user_info (0.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 124)) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 124)) [0m
+Rendered pages/_stats (1.4ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.5ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 1) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 18ms (View: 3, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"about"}
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+REQUESTING PAGE: GET /home with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/home]
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/home"}
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"contact"}
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"help"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:31:26) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+REQUESTING PAGE: GET /new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:31:27) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://www.example.com/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (21.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+REQUESTING PAGE: GET /new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 12ms (View: 10, DB: 23) | 200 OK [http://www.example.com/new]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-08-06 15:35:36) [POST]
+  Parameters: {"user"=>{"name"=>"Example User", "email"=>"user@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'user@example.com', '2015-08-06 10:05:36', '2015-08-06 10:05:36', 'c9c00b70e942e735117ebcd824347f3302357cbc64a10b5b5a303384ca23b3fc', '1f729422ac76ea2229299ecef318f332cca957dfb20a7910c14d1dfde518139c', NULL, 0)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE `users` SET `remember_token` = 'e9ed1d4d530adccd7d23638efaa6b32d426d6917d5817f40a2fbac99e284cf4e', `updated_at` = '2015-08-06 10:05:36' WHERE `id` = 125[0m
+Redirected to http://www.example.com/users/125
+Completed in 13ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/125 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"125"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 125) [0m
+  [4;35;1mMicropost Load (0.3ms)[0m   [0mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 125) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'e9ed1d4d530adccd7d23638efaa6b32d426d6917d5817f40a2fbac99e284cf4e') LIMIT 1[0m
+Rendered users/_follow_form (0.5ms)
+  [4;35;1mMicropost Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `microposts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 125) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 125) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 125)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 125)) [0m
+Rendered pages/_stats (27.2ms)
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 39ms (View: 34, DB: 4) | 200 OK [http://www.example.com/users/125]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (10.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'example007@railstutorial.org') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `encrypted_password`, `salt`, `remember_token`, `admin`) VALUES('Example User', 'example007@railstutorial.org', '2015-08-06 10:05:36', '2015-08-06 10:05:36', 'c9c00b70e942e735117ebcd824347f3302357cbc64a10b5b5a303384ca23b3fc', '1f729422ac76ea2229299ecef318f332cca957dfb20a7910c14d1dfde518139c', NULL, 0)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 3, DB: 12) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"foobar"}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:35:36) [POST]
+  Parameters: {"session"=>{"email"=>"example007@railstutorial.org", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'example007@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE `users` SET `remember_token` = '1128a7d53989e64b5afb8abcd4aafca507e6a7b9d9b3d23b17a41d1215889468', `updated_at` = '2015-08-06 10:05:36' WHERE `id` = 126[0m
+Redirected to http://www.example.com/users/126
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/sessions]
+REQUESTING PAGE: GET http://www.example.com/users/126 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"show", "id"=>"126"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 126) [0m
+  [4;36;1mMicropost Load (0.2ms)[0m   [0;1mSELECT * FROM `microposts` WHERE (`microposts`.user_id = 126) ORDER BY created_at DESC LIMIT 0, 30[0m
+Rendering template within layouts/application
+Rendering users/show
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '1128a7d53989e64b5afb8abcd4aafca507e6a7b9d9b3d23b17a41d1215889468') LIMIT 1[0m
+Rendered users/_follow_form (0.1ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 126) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `microposts` WHERE (`microposts`.user_id = 126) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.followed_id WHERE ((`relationships`.follower_id = 126)) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `users` INNER JOIN `relationships` ON `users`.id = `relationships`.follower_id WHERE ((`relationships`.followed_id = 126)) [0m
+Rendered pages/_stats (1.2ms)
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users/126]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '1128a7d53989e64b5afb8abcd4aafca507e6a7b9d9b3d23b17a41d1215889468') LIMIT 1[0m
+REQUESTING PAGE: DELETE /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/126"}
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-08-06 15:35:36) [DELETE]
+  Parameters: {"controller"=>"sessions", "action"=>"destroy"}
+Redirected to http://www.example.com/
+Completed in 0ms (DB: 0) | 302 Found [http://www.example.com/signout]
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering pages/home
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+Rendered layouts/_stylesheets (0.3ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 6) | 200 OK [http://www.example.com/signin]
+REQUESTING PAGE: POST /sessions with {"session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign in"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-08-06 15:35:36) [POST]
+  Parameters: {"session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in", "controller"=>"sessions", "action"=>"create"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/sessions]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+REQUESTING PAGE: GET /new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-08-06 15:35:36) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/new]
+REQUESTING PAGE: POST /users with {"user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign up"} and HTTP headers {"HTTP_REFERER"=>"/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-08-06 15:35:36) [POST]
+  Parameters: {"user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"users", "action"=>"create"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK TO SAVEPOINT active_record_1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.2ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
