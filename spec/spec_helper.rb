@@ -9,6 +9,7 @@ require "factories.rb"
 require "will_paginate"
 
 
+
 # Uncomment the next line to use webrat's matchers
 require 'webrat/integrations/rspec-rails'
 require "webrat"
@@ -26,9 +27,15 @@ Spec::Runner.configure do |config|
   # If you're not using ActiveRecord you should remove these
   # lines, delete config/database.yml and disable :active_record
   # in your config/boot.rb
+  def test_sign_in(user)
+    controller.current_user = user
+  end
+
   config.use_transactional_fixtures = true
   config.use_instantiated_fixtures  = false
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
+  
+
 
   # == Fixtures
   #

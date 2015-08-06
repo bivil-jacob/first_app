@@ -15,7 +15,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: sampleDB
+  database: sampleDBTest
   username: root
   password: 
   host: 127.0.0.1

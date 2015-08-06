@@ -26,3 +26,5 @@ gem 'bundler', '1.10.5'
 
 #Create dummy data
 gem 'factory_girl', '~> 1.2.3'
+
+gem 'faker', '0.3.1'
