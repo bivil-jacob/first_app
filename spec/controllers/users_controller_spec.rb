@@ -5,8 +5,152 @@ describe UsersController do
   integrate_views
 
   #Delete these examples and add some real ones
-  
 
+  describe "GET 'index'" do
+    describe "for non-signed-in users" do 
+      it "should deny access" do
+        get :index
+        response.should redirect_to(signin_path)
+        flash[:notice].should =~ /Please sign  in to access this page/i
+      end 
+    end
+
+    
+    describe "for signed-in users" do
+      before(:each) do
+        @user = test_sign_in(Factory(:user))
+        second = Factory(:user, :email => "a@b.com") 
+        third = Factory(:user, :email => "c@d.com")
+        @users = [@user, second, third]
+        30.times do
+            @users << Factory(:user, :email => Factory.next(:email))
+          end
+        User.should_receive(:paginate).and_return(@users.paginate) 
+      end
+
+      it "should be successful" do 
+        get :index
+        response.should be_success
+      end
+
+      it "should have the right title" do
+        get :index
+        response.should have_tag("title", /all users/i)
+      end
+
+      it "should have an element for each user" do 
+        get :index
+        @users.each do |user|
+        response.should have_tag("li", user.name) 
+        end
+      end 
+
+    end
+end
+
+
+  describe "authentication of edit/update pages" do
+    before(:each) do
+    @user = Factory(:user)
+    end
+    describe "for non-signed-in users" do
+      it "should deny access to 'edit'" do
+      get :edit, :id => @user
+      response.should redirect_to(signin_path)
+    end
+
+      it "should deny access to 'update'" do
+        put :update, :id => @user, :user => {} 
+        response.should redirect_to(signin_path)
+      end 
+    end
+
+    describe "for signed-in users" do
+      before(:each) do
+      wrong_user = Factory(:user, :email => "user@example.net") 
+      test_sign_in(wrong_user)
+      end
+
+      it "should require matching users for 'edit'" do 
+        get :edit, :id => @user
+        response.should redirect_to(root_path)
+      end
+
+      it "should require matching users for 'update'" do 
+        put :update, :id => @user, :user => {} 
+        response.should redirect_to(root_path)
+      end
+    end
+
+  end 
+
+
+  describe "PUT 'update'" do
+    before(:each) do
+    @user = Factory(:user)
+    test_sign_in(@user) 
+    User.should_receive(:find).with(@user).and_return(@user)
+    end
+
+    describe "failure" do
+      before(:each) do
+      @invalid_attr = { :email => "", :name => "" } 
+      @user.should_receive(:update_attributes).and_return(false)
+    end
+
+    it "should render the 'edit' page" do
+      put :update, :id => @user, :user => {} 
+      response.should render_template('edit')
+    end
+
+    it "should have the right title" do
+      put :update, :id => @user, :user => {} 
+      response.should have_tag("title", /edit user/i)
+    end 
+  end
+  
+  describe "success" do
+    before(:each) do
+    @attr = { :name => "New Name", :email => "user@example.org", :password => "barbaz", :password_confirmation => "barbaz" } 
+    @user.should_receive(:update_attributes).and_return(true)
+  end
+
+    it "should redirect to the user show page" do 
+      put :update, :id => @user, :user => @attr 
+      response.should redirect_to(user_path(@user))
+    end
+
+    it "should have a flash message" do
+      put :update, :id => @user, :user => @attr 
+      flash[:success].should =~ /Profile Updated/
+    end
+  end
+end
+
+
+  
+  describe "GET 'edit'" do
+    before(:each) do
+    @user = Factory(:user) 
+    test_sign_in(@user)
+  end
+
+  it "should be successful" do 
+    get :edit, :id => @user 
+    response.should be_success
+  end
+  
+  it "should have the right title" do
+    get :edit, :id => @user
+    response.should have_tag("title", /edit user/i)
+  end
+
+  #it "should have a link to change the Gravatar" do
+   # get :edit, :id => @user
+    #gravatar_url = "http://gravatar.com/emails"
+    #response.should have_tag("a[href=?]", gravatar_url, /change/i)
+  #end 
+end
 
   describe "GET 'new'" do
 
@@ -46,6 +190,8 @@ describe UsersController do
     end
 
   end
+
+
 
   describe "GET 'show'" do
     before(:each) do
